@@ -137,11 +137,15 @@ body {
         color: #0d2033;
         font-size: 20px;
         border-radius: 5px;
+        animation: roll 3s infinite;
+        opacity: .7;
     }
 
     .botonNoticias :hover {
         background-color: crimson;
         color: #ffff;
+        transform: rotate(25deg);
+        transition: transform 250ms;
     }
 
 
@@ -164,11 +168,14 @@ body {
         background-color: #ffff;
         border-radius: 4px;
         margin: 5px;
+        transition: transform 0.5s;
     }
 
     div .fotoGaleria1:hover {
         background-color: crimson;
         color: #ffff;
+        transform: scale(1.1);
+        cursor: pointer;
     }
 
     .fotoGaleria1 img {
@@ -203,6 +210,7 @@ body {
         top: 50%;
         left: 80%;
         transform: translate(-50%, -50%);
+        transition: transform 250ms;
         background-color: #f1f1f1;
         color: black;
         font-size: 14px;
@@ -216,6 +224,7 @@ body {
     .botonGaleria:hover {
         background-color: crimson;
         color: white;
+        transform: translateY(10px);
     }
 
 
@@ -279,11 +288,14 @@ body {
         cursor: pointer;
         border-radius: 4px;
         text-align: center;
+        transition: transform 0.5s;
     }
     
     .botonVideoGaleria:hover {
         background-color: crimson;
         color: white;
+        transform: scale(1.1);
+        cursor: pointer;
     }
 
 
@@ -774,12 +786,13 @@ body {
             font-weight: 700;
             font-size: 16px;
             color: lightslategrey;
+            transition: transform 250ms;
+            transform: scale(1.1);
         }
         .menuHorizontal li a:hover:not(.logoLiga) {
-            background-color: crimson;
+            background-color: rgb(219, 205, 72);
             color: #ffff;
         }
-
 }
 
 
