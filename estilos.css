@@ -84,6 +84,11 @@ body {
     .galeriaNoticias:hover {
         background-color: crimson;
         color: lightgray;
+        transition-property: box-shadow, transform;
+        transition-duration: 350ms;
+        transition-timing-function: ease;
+        box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
+        transform: translateY(-8px);
     }
 
     .galeriaNoticias img {
@@ -137,15 +142,14 @@ body {
         color: #0d2033;
         font-size: 20px;
         border-radius: 5px;
-        animation: roll 3s infinite;
         opacity: .7;
     }
 
     .botonNoticias :hover {
         background-color: crimson;
         color: #ffff;
-        transform: rotate(25deg);
-        transition: transform 250ms;
+        transition: transform 750ms ease-in-out 0s;
+        transform: scale(1.5) rotate(135deg);
     }
 
 
@@ -309,20 +313,18 @@ body {
         padding: 10px;
     }
 
-    .galNotClubes:hover {
-        background-color: #0d2033;
-    }
-
     .galNotClubes img {
         width: 100%;
         height: auto;
         opacity: 1;
         transition: .5s ease;
         backface-visibility: hidden;
+        filter: grayscale(100%);
+        transition: filter 450ms ease;
     }
 
     .galNotClubes:hover .imgNoticia {
-        opacity: 0.3;
+        filter: grayscale(0%) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.5));
     }
 
     .galNotClubes:hover .middle {
@@ -350,6 +352,7 @@ body {
     .sidebar {
         grid-area: sidebar;
         background-color: lightgray;
+        text-align: center;
     }
 
 
@@ -482,6 +485,11 @@ body {
     div .ngContent:hover {
         background-color: #0d2033;
         color: #ffff;
+        transition-property: box-shadow, transform;
+        transition-duration: 350ms;
+        transition-timing-function: ease;
+        box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
+        transform: scale(1.5);
     }
 
     .ngContent img {
@@ -561,11 +569,13 @@ body {
         background-color: #ffff;
         border-radius: 4px;
         margin: 5px;
+        filter: grayscale(100%);
+        transition: filter 450ms ease;
     }
 
     div .cgContent:hover {
-        background-color: #0d2033;
         color: #ffff;
+        filter: grayscale(0%) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.5));
     }
 
     .cgContent img {
